@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;background:#f4f4f4}
+    header,footer{background:#222;color:#fff;text-align:center;padding:16px}
+    nav{background:#333;text-align:center;padding:10px}
+    nav a{color:#fff;margin:0 10px;text-decoration:none}
+    section{background:#fff;margin:16px auto;padding:20px;max-width:800px;border-radius:8px}
+    input,textarea,button{width:100%;padding:10px;margin:8px 0;font-size:16px}
+    button{background:#222;color:#fff;border:none}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Website</h1>
+  <p>Simple & clean website</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Welcome to my website.</p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>This website is made using HTML & CSS.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <!-- Netlify Form (NO redirect, NO error) -->
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 My Website
+</footer>
+
+</body>
+</html>
